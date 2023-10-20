@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-size: 18px;
+}
+
+.header{
+    background-color: rgb(26, 26, 92);
+}
+
+.header-box{
+    text-align: center;
+    padding: 30px;
+}
+
+.header-box__titulo{
+    color: white;
+    font-weight: 1000;
+}
+
+.texto{
+    color: white;
+}
+
+.answer{
+    text-align: center;
+    padding: 10px;
+    color: rgb(26, 26, 92);
+}
+
+.figures{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    max-width: 1000px;
+}
+
+/*cajas*/
+
+.box{
+    width: 30%;
+    height: 650px;
+    border: 3px solid rgb(26, 26, 92);
+    border-radius: 10px;
+    margin: 15px;
+    float: left;
+
+}
+
+/* Encabezado y main de las cajas*/
+
+.box-header{
+    text-align: center;
+    background-color: rgb(26, 26, 92);
+    padding: 15px 0;
+    color: white;
+}
+
+.box-main__text{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box-main__input{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(26, 26, 92);
+    border: solid;
+    border-radius: 10px;
+}
+
+.box-main__btn{
+    width: 120px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    background-color: rgb(26, 26, 92);
+    border-style: none;
+    border-radius: 15px;
+}
+
+.box-main__btn:hover{
+    background-color: rgb(48, 48, 175) ;
+    cursor: pointer;
+}
+
+.box-main__btn:active{
+    background-color: rgb(19, 19, 69);
+}
+
+.box-main{
+    text-align: center;
+}
+
+
+
+.box-main__text{
+    margin: 15px;
+}
+
+/*web responsiva */
+
+@media screen and  (max-width:1009px){
+    .figures{
+        width: 100%;
+    }
+}
+
+@media screen and  (max-width:905px){
+    .box{
+        margin: 10px;
+    }
+}
+
+@media screen and  (max-width:751px){
+    .box{
+        width: 90%;
+        height: auto;
+        margin: 25px;
+    }
+}
+
+@media screen and  (max-width:414px){
+    .answer p{
+        font-size: 20px;
+    }
+}
